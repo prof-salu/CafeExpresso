@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<h1>Nossas filiais</h1>
+<ul>
+    {% for filial in lista_filiais %}
+        <li>{{filial.nome}}</li>
+    {% endfor %}
+</ul>
+{% endblock %}
